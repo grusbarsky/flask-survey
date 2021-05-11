@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SURVEY</title>
+</head>
+<body>
+    {% for msg in get_flashed_messages() %} 
+    {{ msg }}
+    {% endfor %} {% block content %} {% endblock %} 
+</body>
+</html>
